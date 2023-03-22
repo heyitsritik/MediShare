@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Checkout example · Bootstrap</title>
+    
+    <script src="form-validation.js" defer></script>
+
+      
+    <!-- ADDED BOOTSTRAP LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- css links -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="style.css" rel="stylesheet" />
+
+    <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet" />
+    
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  
+  <body  id="section_1">
+    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">
+          <img
+            src="images/logo.png"
+            class="logo img-fluid"
+            alt="CareShare"
+          />
+          <span>
+            CareShare
+            <small>Connecting those in need with a wealth of health.</small>
+          </span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="home.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="idnex.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="dashboard.html">Dashboard</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="home.html">Volunteer</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="#">Community</a>
+            </li>
+  
+
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="#section_6">Login</a>
+            </li>
+
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link custom-btn custom-border-btn btn"
+                href="donate.html"
+                >Donate</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="www.google.com"><img src="person.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+
+      <!-- INTRODUCTION -->
+  <!-- <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h2>Checkout form</h2>
+    <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+  </div> -->
+
+
+
+      <!-- ADDED MARGIN TO THE CONTAINER -->
+    <div class="col-md-8 order-md-1 M">
+
+      <!-- HIDING OUT THE USER'S INFO -->
+
+      <!-- <h4 class="mb-3">Billing address</h4> -->
+
+      <form class="needs-validation QTY" novalidate>
+
+        <h4 class="mb-3">Donate Medicine</h4>
+        
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            
+            <!-- ADD CONTENTS OF CARDS -->
+            <div class="row SmallM">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Medicine Name</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-muted">Full name as displayed on Medicine</small>
+                <div class="invalid-feedback">
+                  Medicine Name is required
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Table Count</label>
+
+                <!-- ADD QTY CLASS  -->
+                <input type="text" class="form-control FFF" id="cc-number2" placeholder="" required>
+                <div class="invalid-feedback">
+                  Table count number is required
+                </div>
+              </div>
+            </div>
+
+            <div class="row SmallM">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Purchased Date</label>
+                <input type="date" class="form-control" id="cc-name" placeholder="" required>
+                <!-- <small class="text-muted">Complete number</small> -->
+                <div class="invalid-feedback">
+                  Purchased Date is required
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Expiry Date</label>
+                <input type="date" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  Expiry Date is required
+                </div>
+              </div>
+            </div>
+
+ 
+
+          </div>
+          <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            <div class="row SmallM">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Name on card</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-muted">Full name as displayed on Medicine</small>
+                <div class="invalid-feedback">
+                  Medicine Name is required
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Credit card number</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Expiration</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-cvv">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">DU</div>
+        </div>
+
+                <!-- ADDING DROPDOWN -->
+
+                <div class="btn-group dropstart TypeMed">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Medicine Type
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item type1" href="#">Essential Medicine</a></li>
+                    <li><a class="dropdown-item type2" href="#">Chronic Medicine</a></li>
+                    <li><a class="dropdown-item type3" href="#">Pediatrics Medicine</a></li>
+                    <li><a class="dropdown-item type4" href="#">Reproductive Medicine</a></li>
+                    <li><a class="dropdown-item type5" href="#">Mental Health Medicine</a></li>
+                  </ul>
+                </div>
+
+
+
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Detail</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <h3 class="mb-3">Reward</h3>
+        <h4 class="mb-3">XXX</h4>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Donate</button>
+        <hr class="mb-4">
+        <h3 class="mb-3">Points</h3>
+        <p>
+          There are various types of medicines that can be donated to NGOs, and these can be differentiated based on their intended use or the medical condition they treat. Some of the main categories include:
+<br>
+<b>Essential medicines:</b> These are medications that are necessary for the basic health care of a population and include treatments for common conditions such as pain, fever, and infections.
+<br>
+<b>Chronic disease medicines:</b> These are medications used to treat long-term illnesses such as diabetes, heart disease, and hypertension.
+<br>
+<b>Pediatrics medicines:</b> These are medications specifically designed for use in children and are often lower in dose compared to adult formulations.
+<br>
+<b>Reproductive health medicines:</b> These are medications used for reproductive health care, including contraceptives, prenatal vitamins, and medications for maternal and newborn health.
+<br>
+<b>Mental health medicines:</b> These are medications used to treat mental health conditions such as anxiety, depression, and schizophrenia.
+<br>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ADDED CHATBOT -->
+  <span>
+    <iframe style="position:relative;left: 30rem; bottom: 70rem;"  src="https://links.collect.chat/63db80943948cbc011e408ed"  width="100%"  frameBorder="0"></iframe><script async type="text/javascript" src="https://collectcdn.com/embed.js"></script>
+  </span> 
+
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+      </script>
+      <script src="../assets/dist/js/bootstrap.bundle.min.js">
+
+      </script>
+        
+        <!-- ADDED JS LINK FOR BOOTSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        
+      </body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Dashboard</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+
+    <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">
+          <img src="images/logo.png" class="logo img-fluid" alt="" />
+          <span>
+            CareShare
+            <small>Connecting those in need with a wealth of health</small>
+          </span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a style="color: #717275;" class="nav-link click-scroll" href="home.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link smoothscroll" href="home.html"
+                >About</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a style="color: #5bc1ac;" class="nav-link smoothscroll" href="dashboard.html"
+                >Dashboard</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="home.html"
+                >Volunteer</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="/leader.html">Leaderboard</a>
+          </li>
+
+           
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="http://localhost:4000/"
+                >Community</a
+              >
+            </li>
+
+    
+            </li>
+
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link custom-btn custom-border-btn btn"
+                href="donate.html"
+                >Donate</a
+              >
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link click-scroll" href="www.google.com"><img src="person.png" alt=""></a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="news-section section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-12">
+              <div class="news-block">
+                <div class="news-block-top">
+                  <img
+                    src="https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    class="news-image img-fluid"
+                    alt=""
+                  />
+
+                  <div class="news-category-block">
+                    
+
+                    <a href="#" class="category-block-link">
+                      Medicine Donation
+                    </a>
+                  </div>
+                </div>
+
+                <div class="news-block-info">
+                  <div class="d-flex mt-2">
+                    
+                  </div>
+                  <form
+                  class="custom-form subscribe-form"
+                  action="#"
+                  method="post"
+                  role="form"
+                ><h5>Medicine Request</h5><br>
+                        <div class="container" style="padding-left: 0px;" id="medReq">
+                            <input type="text" style="margin-bottom:0px" class="form-control"  placeholder="Name"><br>
+                            <br>
+                            <input type="number" style="margin-bottom: 0px;" class="form-control"  placeholder="Quantity"><br>
+                        </div>
+                        <br>
+                        <btn type="submit" style="background-color: #ffe15b" class="btn">Check availabilty</btn>
+                    </form>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-12 mx-auto mt-4 mt-lg-0">
+              <form 
+                class="custom-form search-form"
+                method="post"
+                role="form"
+              >
+                <input 
+                  class="form-control"
+                  type="text"
+                  placeholder="Search drug"
+                  id="searchMedicine"
+                  value="Paracetamol"
+                  aria-label="Search"
+                />
+
+                <button type="submit" class="form-control" id="btn1">
+                  <i class="bi-search"></i>
+                </button>
+              </form>
+
+              <h5 class="mt-5 mb-3">Medicine Info</h5>
+
+              <div class="news-block news-block-two-col d-flex mt-4">
+                
+              </div>
+
+              <div class="col-lg-12">
+                <p style="height: 235px; width:110%; background-color: #f0f8ff;" id="medInfo">
+                  Paracetamol is a commonly used medicine that can help treat pain and reduce a high temperature (fever).
+
+It's typically used to relieve mild or moderate pain, such as headaches, toothache or sprains, and reduce fevers caused by illnesses such as colds and flu.
+
+Paracetamol is often recommended as one of the first treatments for pain, as it's safe for most people to take and side effects are rare.
+                </p>
+
+              </div>
+
+              <div style="font-weight:600;font-size:larger" class="category-block d-flex flex-column">
+                <h5 class="mb-3">Categories</h5>
+
+                <a href="#" class="category-block-link">
+                  Essential medicines
+                  <span class="badge">20</span>
+                </a>
+
+                <a href="#" class="category-block-link">
+                  Chronic disease medicine
+                  <span class="badge">30</span>
+                </a>
+
+                <a href="#" class="category-block-link">
+                  Pediatrics medicines
+                  <span class="badge">10</span>
+                </a>
+
+                <a href="#" class="category-block-link">
+                  Reproductive health medicines
+                <span class="badge">15</span>
+                </a>
+
+                <a href="#" class="category-block-link">
+                  Mental health medicines
+                  <span class="badge">20</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row" id="foot">
+          <div class="col-lg-3 col-12 mb-4">
+            <img src="images/logo.png" class="logo img-fluid" alt="" />
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <h5 class="site-footer-title mb-3">Quick Links</h5>
+
+            <ul class="footer-menu">
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Our Story</a>
+              </li>
+
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Causes</a>
+              </li>
+
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Become a volunteer</a>
+              </li>
+
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Partner with us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 mx-auto">
+            <h5 class="site-footer-title mb-3">Contact Infomation</h5>
+
+            <p class="text-white d-flex mb-2">
+              <i class="bi-telephone me-2"></i>
+
+              <a href="tel: 120-240-9600" class="site-footer-link">
+                120-240-9600
+              </a>
+            </p>
+
+            <p class="text-white d-flex">
+              <i class="bi-envelope me-2"></i>
+
+              <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                donate@charity.org
+              </a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer-bottom">
+        
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/news-detail.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/logic.js"></script>
+
+  </body>
+</html>
